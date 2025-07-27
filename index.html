@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OWN PROFESSIONAL ACADEMY - Your Path to Success</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #6366f1, #8b5cf6); /* Indigo to Violet */
+        }
+        .btn-primary {
+            @apply inline-block px-8 py-3 text-lg font-semibold text-white rounded-full transition duration-300 ease-in-out transform hover:scale-105;
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+        }
+        .section-title {
+            @apply text-4xl font-bold text-gray-800 mb-8 text-center;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl;
+        }
+        .testimonial-card {
+            @apply bg-white rounded-xl shadow-md p-6 lg:p-8 flex flex-col items-center text-center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">OWN PROFESSIONAL ACADEMY</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 font-medium">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-indigo-600 font-medium">Services</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-6">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="#home" class="text-2xl text-gray-800 hover:text-indigo-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+            <a href="#about" class="text-2xl text-gray-800 hover:text-indigo-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About Us</a>
+            <a href="#services" class="text-2xl text-gray-800 hover:text-indigo-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+            <a href="#testimonials" class="text-2xl text-gray-800 hover:text-indigo-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Testimonials</a>
+            <a href="#contact" class="text-2xl text-gray-800 hover:text-indigo-600 font-medium" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20 md:py-32 rounded-b-3xl shadow-xl">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Unlock Your Career Potential with <span class="block mt-2">OWN PROFESSIONAL ACADEMY</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+                Empowering aspiring professionals with cutting-edge training and guaranteed placements for a brighter future.
+            </p>
+            <a href="#contact" class="btn-primary">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">About OWN PROFESSIONAL ACADEMY</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/e0e7ff/4f46e5?text=About+Us+Image" alt="About Us" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        OWN PROFESSIONAL ACADEMY is dedicated to bridging the gap between academic knowledge and industry demands. We provide comprehensive training programs designed by industry experts, focusing on practical skills, real-world projects, and personalized mentorship.
+                    </p>
+                    <p class="mb-4 text-lg">
+                        Our mission is to equip you with the confidence and competence needed to excel in your chosen career path. We pride ourselves on our high success rate in placements, connecting our graduates with leading companies across various sectors.
+                    </p>
+                    <p class="text-lg">
+                        Join us and experience a transformative learning journey that propels you towards professional excellence and a rewarding career.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="card">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Skill Development Programs</h3>
+                    <p class="text-gray-600">
+                        Specialized training in high-demand areas like IT, Digital Marketing, Finance, and Soft Skills.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="card">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 10h.01M17 10h.01M21 10h.01M7 10h.01M12 12h.01M12 16h.01M12 20h.01M12 22h.01M12 24h.01"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Guaranteed Placement Assistance</h3>
+                    <p class="text-gray-600">
+                        Dedicated support for resume building, interview preparation, and connecting with top employers.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="card">
+                    <div class="text-indigo-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Career Counseling & Mentorship</h3>
+                    <p class="text-gray-600">
+                        Personalized guidance to help you choose the right career path and achieve your professional goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">What Our Students Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <img src="https://placehold.co/100x100/e0e7ff/4f46e5?text=JD" alt="Student 1" class="w-24 h-24 rounded-full object-cover mb-4 border-4 border-indigo-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "OWN PROFESSIONAL ACADEMY transformed my career. The training was top-notch, and the placement support was incredible. I landed my dream job thanks to them!"
+                    </p>
+                    <p class="font-semibold text-gray-800">- Jane Doe, Software Engineer</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <img src="https://placehold.co/100x100/e0e7ff/4f46e5?text=AS" alt="Student 2" class="w-24 h-24 rounded-full object-cover mb-4 border-4 border-indigo-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "The mentors here are truly invested in your success. They guided me every step of the way, and I'm now confidently working in a leading marketing firm."
+                    </p>
+                    <p class="font-semibold text-gray-800">- Alex Smith, Digital Marketing Specialist</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <img src="https://placehold.co/100x100/e0e7ff/4f46e5?text=EM" alt="Student 3" class="w-24 h-24 rounded-full object-cover mb-4 border-4 border-indigo-200">
+                    <p class="text-gray-700 italic mb-4">
+                        "I highly recommend OWN PROFESSIONAL ACADEMY to anyone looking to boost their career. Their practical approach and industry connections are unmatched."
+                    </p>
+                    <p class="font-semibold text-gray-800">- Emily Miller, Financial Analyst</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Section -->
+    <section id="contact" class="gradient-bg text-white py-16 md:py-24 rounded-t-3xl shadow-xl">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Success Story?</h2>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                Connect with OWN PROFESSIONAL ACADEMY today and take the first step towards a rewarding career.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="mailto:info@ownprofessionalacademy.com" class="btn-primary bg-white text-indigo-600 hover:bg-gray-100" style="background: white; color: #6366f1;">
+                    Email Us
+                </a>
+                <a href="tel:+919876543210" class="btn-primary bg-white text-indigo-600 hover:bg-gray-100" style="background: white; color: #6366f1;">
+                    Call Now
+                </a>
+            </div>
+            <div class="mt-12 text-lg">
+                <p><strong>Address:</strong> [Your Academy Address Here], [City], [State], [Pincode]</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Email:</strong> info@ownprofessionalacademy.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 OWN PROFESSIONAL ACADEMY. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
